@@ -1,6 +1,8 @@
 walksp = 3; // Horizontal movement speed
 jump_height = 7; // Initial speed of jump (positive is up)
 
+hp = 200;
+
 // State variables
 hsp = 0; 
 vsp = jump_height * -1;

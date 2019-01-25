@@ -1,4 +1,4 @@
-object_follow = obj_player;
+object_y = obj_player.y;
 lerp_speed = 0.15;
 
 x = room_width-640;
