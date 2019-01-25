@@ -52,9 +52,9 @@ if (key_jump && jump_armed)
 #endregion
 
 // Restart if character falls below map
-if (y > room_height)
+if (y > (obj_camera + 404))
 {
-	room_restart();
+	//room_restart();
 }
 
 scr_move(hsp);
