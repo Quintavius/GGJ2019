@@ -1,23 +1,14 @@
 {
-    "id": "aa5c7e59-6e0a-4f0e-b690-8bd83bbd6d5f",
+    "id": "b9af8dc3-9320-4f58-8328-c71f3ed7fb3f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_wall",
+    "name": "obj_spawn_controller",
     "eventList": [
-        {
-            "id": "a7354a2f-2fe8-49ea-ae46-817849347a33",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "aa5c7e59-6e0a-4f0e-b690-8bd83bbd6d5f"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "11191189-1df3-48ce-9395-a04098be0975",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "374b3a8f-94d5-4ca3-bcf4-93bb2a3645f9",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
