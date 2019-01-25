@@ -52,7 +52,7 @@ if (key_jump && jump_armed)
 #endregion
 
 // Restart if character falls below map
-if (y > 1024)
+if (y > room_height)
 {
 	room_restart();
 }
