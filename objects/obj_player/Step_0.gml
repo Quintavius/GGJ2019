@@ -58,3 +58,17 @@ if (y > (obj_camera.y + 424) && global.game_time > 7)
 }
 
 scr_move(hsp);
+
+if (place_meeting(x, y, obj_water) && hp > 0)
+{
+	hp -= 2;
+}
+else if (hp < 200)
+{
+	hp += 1;
+}
+
+if (hp <= 0)
+{
+	room_restart();	
+}

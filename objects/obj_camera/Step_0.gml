@@ -1,9 +1,13 @@
-y = lerp(y, object_follow.y, lerp_speed);
-
 if (global.game_time > 5)
 {
-	//y -= object_follow.y;
+	if (obj_player.y <= object_y)
+	{
+		object_y = obj_player.y;
+	}
 }
+
+y = lerp(y, object_y, lerp_speed);
+
 
 // Screen shake
 x += random_range(-shake_remain,shake_remain);
