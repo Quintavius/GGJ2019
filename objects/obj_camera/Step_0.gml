@@ -1,4 +1,9 @@
-y -= global.scroll_speed;
+//follow_y = 
+
+if (global.game_time > 5)
+{
+	//y -= object_follow.y;
+}
 
 // Screen shake
 x += random_range(-shake_remain,shake_remain);

@@ -1,6 +1,8 @@
 x = room_width-640;
 y = room_height-360;
 
+object_follow = obj_player;
+
 // Setup camera matrix
 camera = camera_create();
 
@@ -11,7 +13,6 @@ camera_set_view_mat(camera, view);
 camera_set_proj_mat(camera, orth);
 
 view_camera[0] = camera;
-
 
 // Initialize variables for scr_screen_shake()
 shake_length = 0;

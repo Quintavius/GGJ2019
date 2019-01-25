@@ -1,3 +1,5 @@
+global.game_time += 1/60;
+
 //Spawn crates
 if (mouse_check_button_pressed(mb_left))
 {
@@ -11,7 +13,6 @@ if (mouse_check_button_pressed(mb_left))
 		scr_message("Cannot place block here", 3);
 	}
 }
-
 
 if (keyboard_check_pressed(ord("R")))
 {

@@ -143,11 +143,27 @@
             }
         },
         {
+            "Key": "8a932222-97fa-42d8-b74a-1b1ae69eedf3",
+            "Value": {
+                "id": "c10c120f-79e1-44ec-9701-e0ed6128f6b8",
+                "resourcePath": "sprites\\spr_tint\\spr_tint.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "92a13fa5-3c84-4453-85cf-2ec2932b58a0",
             "Value": {
                 "id": "0e4f9389-3467-4430-9945-7e2f4106cd79",
                 "resourcePath": "sprites\\spr_player\\spr_player.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "92e8c851-d9fa-4edc-b8bc-69bf994173e6",
+            "Value": {
+                "id": "15e76f6d-b5b6-40b0-98df-c9298372c35b",
+                "resourcePath": "objects\\obj_water\\obj_water.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -196,6 +212,14 @@
                 "id": "05bf3c99-650b-495e-98ee-679fa6c12c8e",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b716863d-6756-49f6-96c3-d80a5f8af565",
+            "Value": {
+                "id": "fd6c3d3f-9aa0-43c9-9f03-e8dda6cbb939",
+                "resourcePath": "sprites\\spr_water\\spr_water.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

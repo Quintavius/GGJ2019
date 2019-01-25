@@ -52,9 +52,9 @@ if (key_jump && jump_armed)
 #endregion
 
 // Restart if character falls below map
-if (y > (obj_camera + 404))
+if (y > (obj_camera.y + 424) && global.game_time > 7)
 {
-	//room_restart();
+	room_restart();
 }
 
 scr_move(hsp);
