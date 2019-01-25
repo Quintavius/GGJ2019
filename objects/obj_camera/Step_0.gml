@@ -1,4 +1,4 @@
-//follow_y = 
+y = lerp(y, object_follow.y, lerp_speed);
 
 if (global.game_time > 5)
 {

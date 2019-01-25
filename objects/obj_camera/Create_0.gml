@@ -1,7 +1,8 @@
+object_follow = obj_player;
+lerp_speed = 0.15;
+
 x = room_width-640;
 y = room_height-360;
-
-object_follow = obj_player;
 
 // Setup camera matrix
 camera = camera_create();
