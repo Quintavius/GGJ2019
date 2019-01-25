@@ -58,4 +58,3 @@ if (y > 1024)
 }
 
 scr_move(hsp);
-
