@@ -402,7 +402,7 @@
             "Key": "a1003f6a-1dbc-48c6-8ae2-21ac0dae11e3",
             "Value": {
                 "id": "d101229c-c926-48d4-bb34-73f682681b52",
-                "resourcePath": "scripts\\scr_collectibles\\scr_collectibles.yy",
+                "resourcePath": "scripts\\SpawnCoin\\SpawnCoin.yy",
                 "resourceType": "GMScript"
             }
         },
