@@ -79,6 +79,7 @@ if (global.is_dead)
 global.tint_alpha = clamp(global.tint_alpha, 0, 1);
 
 scr_audio("damage");
+scr_audio("beat");
 
 if (!global.is_dead && !global.is_paused)
 {

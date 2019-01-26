@@ -15,7 +15,6 @@ if global.sound == 1 {
 		break;
 		
 		case "music_level": //background music
-		audio_sound_gain(sfx_mus_level, 0.45, 120);
 		if (!audio_is_playing(sfx_mus_level) and global.music == 1)
 		{
 			audio_play_sound(sfx_mus_level,64,1);
