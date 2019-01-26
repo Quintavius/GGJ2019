@@ -21,11 +21,11 @@ for (var i = 0; i < 3; i++)
 	{
 		draw_sprite(spr_menu_select, 0, 460, y + yy);
 		draw_set_color(c_white);
-		draw_text(room_width/2, y + 30 + yy, item);
+		draw_text(room_width/2, y + 29 + yy, item);
 	}
 	else 
 	{
 		draw_set_color(c_gray);
-		draw_text(room_width/2, y + 30 + yy, item);
+		draw_text(room_width/2, y + 29 + yy, item);
 	}
 }
