@@ -1,4 +1,17 @@
+// Time since room was started
 global.game_time += 1/room_speed;
+
+// Time playing
+if (global.is_playing)
+{
+	global.play_time += 1/room_speed;
+}
+
+// Warning message for water about to rise
+if (global.play_time = 1/60)
+{
+	scr_message("The water will soon rise! Build your way up!", 5);
+}
 
 if (global.game_time > 0.5 && global.game_time < 2.6)
 {
@@ -24,6 +37,7 @@ if (mouse_check_button_pressed(mb_left) && !global.is_paused)
 	{
 		instance_create_layer(mouse_x, mouse_y, "Instances", obj_crate);
 		scr_audio("place")
+		global.is_playing = true;
 	}
 	else
 	{
