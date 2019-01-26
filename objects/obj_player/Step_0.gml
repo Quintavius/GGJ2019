@@ -54,10 +54,16 @@ if (key_jump && jump_armed)
 x = clamp(x, 0, room_width - 64);
 
 // Restart if character falls below map
-if ((y > (obj_camera.y + 424) && global.game_time > 7) || hp <= 0)
+if (y > (obj_camera.y + 424) || hp <= 0)
 {
 	global.is_dead = true;
 }
+
+if (global.is_dead)
+{
+	global.tint_alpha += 1/60;
+}
+global.tint_alpha = clamp(global.tint_alpha, 0, 1);
 
 scr_move(hsp);
 
