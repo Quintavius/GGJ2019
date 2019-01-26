@@ -38,11 +38,11 @@ for(h = 0; h < cave_digging_iterations; h++){
 			}
 		}else{
 			//Move sideways
-			if (random(1) < 0.5){
+			if (random(1) < 0.5 && x_tunnel > 0){
 				//Move left
 				x_tunnel--
 				dugUp = false;
-			}else{
+			}else if (x_tunnel < PixelToBlock(room_width)){
 				//Move right
 				x_tunnel++
 				dugUp = false;
