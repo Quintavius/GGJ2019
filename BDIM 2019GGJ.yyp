@@ -95,6 +95,22 @@
             }
         },
         {
+            "Key": "2136531b-d2f2-442f-83df-0653f267f89d",
+            "Value": {
+                "id": "eaa71c10-4adc-40cc-bcd8-0cdf00bac841",
+                "resourcePath": "objects\\title_controller\\title_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "271d0471-f7dc-4468-851a-8c2be0649ee6",
+            "Value": {
+                "id": "09e20c4d-8d4e-452a-ae46-cf7bb999484e",
+                "resourcePath": "rooms\\rm_title\\rm_title.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2744768d-203e-4adb-892e-46cda0f73d18",
             "Value": {
                 "id": "50d3e941-7097-414d-80b5-4c145c86fbc5",
