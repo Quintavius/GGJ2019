@@ -16,7 +16,7 @@ if (global.is_dead)
 }
 
 //Spawn crates
-if (mouse_check_button_pressed(mb_left))
+if (mouse_check_button_pressed(mb_left) && !global.is_paused)
 {
 	if (!collision_rectangle(mouse_x-32, mouse_y+32, mouse_x+32, mouse_y-32, obj_solid, false, false) &&
 		!collision_rectangle(mouse_x-32, mouse_y+32, mouse_x+32, mouse_y-32, obj_player, false, false))

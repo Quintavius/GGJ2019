@@ -44,7 +44,7 @@ var move = (key_right - key_left);
 hsp = move * walksp;
 
 // Jumping
-if (key_jump && jump_armed)
+if (key_jump && jump_armed && !global.is_paused)
 {
 	vsp = jump_height * -1 * sign(global.grv);
 	jump_armed = false;
