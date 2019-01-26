@@ -1,4 +1,4 @@
-if (global.game_time > 2)
+if (global.play_time > 2)
 {
 	if (obj_player.y <= object_y)
 	{

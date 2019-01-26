@@ -1,4 +1,4 @@
-message_timer = 5;
-message_string = "The water will soon rise! Build your way up!";
+message_timer = 0;
+message_string = 0;
 x = 0;
 y = 0;
