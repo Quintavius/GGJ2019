@@ -1,1 +1,0 @@
-global.is_playing = true;

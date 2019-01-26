@@ -61,7 +61,7 @@ x = clamp(x, 0, room_width);
 scr_move(hsp);
 
 // Restart if character falls below map
-if (y > (obj_camera.y + 360))
+if (y > (obj_camera.y + 296))
 {
 	scr_message("The only way is forward!",3);
 }
