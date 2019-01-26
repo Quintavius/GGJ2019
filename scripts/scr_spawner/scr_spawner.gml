@@ -10,6 +10,7 @@ if (player_section > last_reached_section){
 if (player_height > next_spawn_height){
 	//Spawning manager goes here
 	scr_generate_cave_section();
+	show_debug_message("Generating cave section")
 	next_spawn_height += section_height;
 }
 

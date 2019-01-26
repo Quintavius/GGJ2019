@@ -1,9 +1,10 @@
 /// @description Clean up
-var crateOnTop = false;
-var i;
-for (i = 0; i < 64; i++){
-	if (place_meeting(x+i, y-2, obj_crate)){
-		crateOnTop = true;	
+if (crateOnTop = false){
+	var i;
+	for (i = 0; i < 3; i+=16){
+		if (place_meeting(x+i, y-2, obj_crate)){
+			crateOnTop = true;
+		}
 	}
 }
 

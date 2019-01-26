@@ -1,6 +1,6 @@
 //Block out everything
 var ypos;
-for(ypos = 0; ypos < section_height; ypos++){
+for(ypos = 3; ypos < section_height; ypos++){
 	var xpos;
 	for (xpos = 0; xpos < PixelToBlock(room_width); xpos++){
 		var xpixel = BlockToPixel(xpos);
@@ -30,9 +30,11 @@ for(h = 0; h < cave_digging_iterations; h++){
 				y_tunnel++
 				dugUp = true;
 			}else{
-				//Move down
-				y_tunnel--
-				dugUp = true;
+				if (y_tunnel < SectionToBlock(last_reached_section+1)){
+					//Move down
+					y_tunnel--
+					dugUp = true;
+				}
 			}
 		}else{
 			//Move sideways
