@@ -87,6 +87,8 @@ global.tint_alpha = clamp(global.tint_alpha, 0, 1);
 // Danger warning audio
 scr_audio("damage");
 scr_audio("beat");
+scr_audio("danger1");
+scr_audio("danger2");
 
 // Player health
 if (!global.is_dead && !global.is_paused)
