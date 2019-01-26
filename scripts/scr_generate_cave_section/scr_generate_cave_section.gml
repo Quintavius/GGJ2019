@@ -66,7 +66,7 @@ for(ypos = 4; ypos < section_height; ypos++){
 	var xpos;
 	for (xpos = 0; xpos < PixelToBlock(room_width); xpos++){
 		var xpixel = BlockToPixel(xpos);
-		var ypixel = 0 - (BlockToPixel(ypos));
+		var ypixel = 0 - (BlockToPixel(ypos) + (BlockToPixel(SectionToBlock(last_reached_section+1))));
 		instance_create_layer(xpixel, ypixel, "Instances", obj_wall);
 	}
 }
@@ -76,9 +76,9 @@ var h;
 for(h = 0; h < cave_digging_iterations * 4; h++){
 	var dugUp = false;
 	var x_tunnel = irandom_range(0,PixelToBlock(room_width));
-	var y_tunnel = 0;
+	var y_tunnel = SectionToBlock(last_reached_section+1);
 
-	while(y_tunnel < SectionToBlock(last_reached_section+1)){
+	while(y_tunnel < SectionToBlock(last_reached_section+2)){
 		if (instance_position(BlockToPixel(x_tunnel), 0-BlockToPixel(y_tunnel), obj_wall)){
 			position_destroy(BlockToPixel(x_tunnel), 0-BlockToPixel(y_tunnel));
 		}
@@ -92,7 +92,7 @@ for(h = 0; h < cave_digging_iterations * 4; h++){
 				y_tunnel++
 				dugUp = true;
 			}else{
-				if (y_tunnel < SectionToBlock(last_reached_section)){
+				if (y_tunnel < SectionToBlock(last_reached_section+1)){
 					//Move down
 					y_tunnel--
 					dugUp = true;
@@ -128,18 +128,18 @@ for(ypos = 3; ypos < section_height; ypos++){
 	}
 }
 //Dig holes
-if (random(1) < 0.2){
+var numberOfHoles = irandom_range(1,4);
+for(var ii = 0; ii<numberOfHoles;ii++){
 	//Dig out a big hole
 	show_debug_message("digging hole");
 	var x_hole = BlockToPixel(irandom_range(0,PixelToBlock(room_width)));
-	var y_hole = BlockToPixel(irandom_range(SectionToBlock(last_reached_section+1), SectionToBlock(last_reached_section+2)));
+	var y_hole = 0-BlockToPixel(irandom_range(SectionToBlock(last_reached_section+1), SectionToBlock(last_reached_section+2)));
 	instance_create_layer(x_hole,y_hole,"Instances",obj_coin);
 	var circleToDig = ds_list_create();
-	var killBlock = collision_circle_list(x_hole,y_hole,BlockToPixel(12),obj_wall,false,true, circleToDig,false);
+	var killBlock = collision_circle_list(x_hole,y_hole,BlockToPixel(4),obj_wall,false,true, circleToDig,false);
 	if (killBlock > 0){
 		for(var l = 0; l < killBlock; l++){
 			instance_destroy(circleToDig[| l])
-			show_debug_message(circleToDig[| l]);
 		}
 	}
 	ds_list_destroy(circleToDig);

@@ -5,7 +5,8 @@ next_spawn_height = section_height/2;
 enum GenerationRecipes{
 	ThreeTunnelCave,
 	StarterCave,
-	SpikeCaverns
+	SpikeCaverns,
+	length
 }
 
 //Cave settings
