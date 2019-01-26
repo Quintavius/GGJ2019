@@ -61,7 +61,7 @@ if ((y > (obj_camera.y + 424) && global.game_time > 7) || hp <= 0)
 
 scr_move(hsp);
 
-if (place_meeting(x, y, obj_water) && hp > 0)
+if (place_meeting(x, y, obj_water) || place_meeting(x ,y, obj_solid) && hp > 0)
 {
 	hp -= 2;
 }
