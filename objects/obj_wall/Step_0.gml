@@ -1,17 +1,6 @@
 /// @description Clean up
-if (crateOnTop = false && isolatedBlock = false){
-	var i;
-	for (i = 0; i < 3; i+=16){
-		if (place_meeting(x+i, y-2, obj_crate)){
-			crateOnTop = true;
-		}
-		if (place_meeting(x+i, y-2, obj_wall)){
-			isolatedBlock = true;
-		}
-	}
-}
 
-if (y > (obj_player.y + 800) && crateOnTop == false){
+if (y > obj_player.y + 800){
 	instance_destroy();
 }
 
