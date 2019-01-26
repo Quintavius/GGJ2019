@@ -1,1 +1,1 @@
-return (floor(argument0 / spr_crate.sprite_width));
+return (floor(argument0 / 64));
