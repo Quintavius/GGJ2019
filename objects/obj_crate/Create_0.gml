@@ -12,5 +12,7 @@ vsp = 0;
 
 hp = 60;
 being_mined = false;
+mine_timer = 0;
 hover = false;
+
 index = 0;

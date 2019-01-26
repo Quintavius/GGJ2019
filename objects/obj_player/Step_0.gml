@@ -60,6 +60,11 @@ x = clamp(x, 0, room_width);
 
 scr_move(hsp);
 
+if (y <= 0 && y >= -2)
+{
+	scr_message("Hold right click over a block to mine it.", 4);	
+}
+
 // Restart if character falls below map
 if (y > (obj_camera.y + 296))
 {
@@ -72,15 +77,18 @@ if ((y > (obj_camera.y + 424) || hp <= 0) && !global.is_dead)
 	scr_audio("death");
 }
 
+// Fade to black on death
 if (global.is_dead)
 {
 	global.tint_alpha += 1/60;
 }
 global.tint_alpha = clamp(global.tint_alpha, 0, 1);
 
+// Danger warning audio
 scr_audio("damage");
 scr_audio("beat");
 
+// Player health
 if (!global.is_dead && !global.is_paused)
 {
 	if (place_meeting(x, y, obj_water) || place_meeting(x ,y, obj_solid))
