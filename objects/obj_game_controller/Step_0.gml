@@ -13,6 +13,7 @@ if (global.is_dead)
 	{
 		room_restart();	
 	}
+	global.is_paused = false;
 }
 
 //Spawn crates
