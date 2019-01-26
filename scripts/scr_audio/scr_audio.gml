@@ -31,11 +31,43 @@ if global.sound == 1 {
 		audio_sound_pitch(sfx_place, 1.1 - random(0.2));
 		break;
 		
+		case "danger1": // danger level 1
+		var danger1_value = 1 - (clamp(abs(obj_player.y - obj_water.y)/456 ,0 ,1 ));
+		audio_sound_gain(sfx_beat, danger1_value * 0.1, 0);
+		if (!global.is_dead && abs(obj_player.y - obj_water.y) < 456)
+		{
+			if (!audio_is_playing(sfx_beat))
+			{
+				audio_play_sound(sfx_beat, 16, 1);
+			}
+		}
+		else
+		{
+			audio_stop_sound(sfx_beat);	
+		}
+		break;
+		
+		case "danger2": // danger level 1
+		var danger2_value = 1 - (clamp(abs(obj_player.y - obj_water.y)/128 ,0 ,1 ));
+		audio_sound_gain(sfx_static, danger2_value * 0.5, 0);
+		if (!global.is_dead && abs(obj_player.y - obj_water.y) < 128)
+		{
+			if (!audio_is_playing(sfx_static))
+			{
+				audio_play_sound(sfx_static, 16, 1);
+			}
+		}
+		else
+		{
+			audio_stop_sound(sfx_static);	
+		}
+		break;
+		
 		case "damage": // player or animal death
 		audio_sound_gain(sfx_damage, 0.3*(1-obj_player.hp/200), 0);
 		if (!audio_is_playing(sfx_damage))
 		{
-			audio_play_sound(sfx_damage,64,0);
+			audio_play_sound(sfx_damage,64,1);
 		}
 		if (global.is_dead || obj_player.hp >= 200)
 		{
