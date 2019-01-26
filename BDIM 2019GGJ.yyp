@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "44427e9f-94b1-4c6c-9f77-27447c679de1",
+            "Value": {
+                "id": "058fa0e5-d1dc-4ad8-bf9d-ba42d04c7bb6",
+                "resourcePath": "scripts\\BlockToSection\\BlockToSection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4c502b46-a42f-4dcd-90bd-8bbe31719e57",
             "Value": {
                 "id": "e8e25482-7694-4988-989e-a75a697aa760",
@@ -143,11 +151,27 @@
             }
         },
         {
+            "Key": "7118b024-ee3e-487c-8683-3dd24b5d2a0c",
+            "Value": {
+                "id": "240cba93-1c60-408c-ac0f-fedfc5d5e8fa",
+                "resourcePath": "scripts\\PixelToBlock\\PixelToBlock.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "733fccaf-1415-47bf-bce6-f4e7bc8067ec",
             "Value": {
                 "id": "82b898cd-1d7a-4af9-a3f0-98d5c5124d6f",
                 "resourcePath": "objects\\obj_messagebox\\obj_messagebox.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "879f9fb5-d374-4092-b830-6bd1a63f4226",
+            "Value": {
+                "id": "feff4a0d-4a6c-496b-91fb-dc24b6919fae",
+                "resourcePath": "scripts\\SectionToBlock\\SectionToBlock.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -204,6 +228,14 @@
                 "id": "ab50ca71-432f-4f21-a374-a6f3eff85174",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a9c95945-4aaf-43d3-bcdb-2559a5cf0eac",
+            "Value": {
+                "id": "af882cfe-74b9-4014-9670-febd3c6e1450",
+                "resourcePath": "scripts\\BlockToPixel\\BlockToPixel.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -381,7 +413,11 @@
         "c5572e13-4c12-4b0a-9313-4e4aeea8932e",
         "3072269b-bcce-4d4c-bbc9-6cff095b35f4",
         "bcf336b6-6fce-4dd6-b96d-5f7cf75e16ef",
-        "fb956057-986f-4750-b9a5-f16c4dc9a7c9"
+        "fb956057-986f-4750-b9a5-f16c4dc9a7c9",
+        "7118b024-ee3e-487c-8683-3dd24b5d2a0c",
+        "a9c95945-4aaf-43d3-bcdb-2559a5cf0eac",
+        "44427e9f-94b1-4c6c-9f77-27447c679de1",
+        "879f9fb5-d374-4092-b830-6bd1a63f4226"
     ],
     "tutorial": ""
 }

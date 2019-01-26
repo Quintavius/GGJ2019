@@ -1,9 +1,13 @@
 //Check current section
-var player_height = floor(abs(obj_player.y) / spr_crate.sprite_height); //Convert pixel to block value
+var player_height = abs(PixelToBlock(obj_player.y)); //Convert pixel to block value
 var player_section = floor(player_height / section_height); //Convert block value to section
 if (player_section > last_reached_section){
 	last_reached_section = player_section
 }
+
+show_debug_message(player_height);
+show_debug_message(next_spawn_height);
+
 
 //From here on, use last reached section
 if (player_height > next_spawn_height){
