@@ -1,5 +1,6 @@
 tileValues[0] = 59;
 tileValues[224] = 3;
+tileValues[255] = 6;
 
 var bitValue = (
 	(1 * NewBoolSwitch(position_meeting(x - BlockToPixel(1), y - BlockToPixel(1), obj_wall))) +
@@ -13,3 +14,8 @@ var bitValue = (
 )
 
 draw_tile(placeHolderTiles, tileValues[bitValue] , 0,x,y);
+
+if (tileValues[bitValue] = 0){
+	draw_text(x,y,bitValue);
+	show_debug_message(bitValue);
+}
