@@ -1,4 +1,3 @@
-spawn_distance_variation = 3;	//Time in seconds that spawn timer can vary
-spawn_distance = 8;				//Time in seconds until next spawn
-max_wall_width = 4;
-last_generated_height = 0;
+section_height = 24; //Section height in blocks
+last_reached_section = 0; //Current section
+next_spawn_height = section_height/2;

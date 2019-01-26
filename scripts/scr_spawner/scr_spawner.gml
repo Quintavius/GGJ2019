@@ -1,4 +1,19 @@
+//Check current section
+var player_height = floor(abs(obj_player.y) / spr_crate.sprite_height); //Convert pixel to block value
+var player_section = floor(player_height / section_height); //Convert block value to section
+if (player_section > last_reached_section){
+	last_reached_section = player_section
+}
 
+//From here on, use last reached section
+if (player_height > next_spawn_height){
+	//Spawning manager goes here
+	scr_generate_cave_section();
+	next_spawn_height += section_height;
+}
+
+
+/*
 var spawn_distance_blocks = spawn_distance + irandom_range(0, spawn_distance_variation) * spr_wall.sprite_height
 if (obj_player.y < last_generated_height - spawn_distance_blocks){
 
@@ -12,3 +27,4 @@ if (obj_player.y < last_generated_height - spawn_distance_blocks){
 	}
 	last_generated_height = obj_player.y;
 }
+*/
