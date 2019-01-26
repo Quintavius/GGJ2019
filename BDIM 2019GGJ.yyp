@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "8b2bec6e-698f-40ee-8692-06618a526ee8",
+            "Value": {
+                "id": "711b5050-215c-4b98-b162-47b6f3030b89",
+                "resourcePath": "sprites\\spr_mine_outline\\spr_mine_outline.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "92a13fa5-3c84-4453-85cf-2ec2932b58a0",
             "Value": {
                 "id": "0e4f9389-3467-4430-9945-7e2f4106cd79",
