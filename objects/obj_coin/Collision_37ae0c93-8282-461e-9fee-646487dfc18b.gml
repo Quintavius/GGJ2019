@@ -1,2 +1,2 @@
-global.coinsCollected++
+global.coinsCollected += gemValue;
 instance_destroy();
