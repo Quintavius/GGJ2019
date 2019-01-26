@@ -1,5 +1,5 @@
 walksp = 3; // Horizontal movement speed
-jump_height = 7; // Initial speed of jump (positive is up)
+jump_height = 9; // Initial speed of jump (positive is up)
 
 hp = 200;
 

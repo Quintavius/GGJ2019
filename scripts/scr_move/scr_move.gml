@@ -3,7 +3,9 @@ var hsp = argument[0];
 // Basic collisions and gravity
 
 // Calculate gravity
-vsp += global.grv;
+var fallMod;
+if (vsp < 0) {fallMod = 1.5} else {fallMod = 2}
+vsp += global.grv * fallMod;
 
 if (global.is_paused)
 {
