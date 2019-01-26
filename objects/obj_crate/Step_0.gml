@@ -16,6 +16,12 @@ if (place_meeting(x,y, obj_solid) || place_meeting(x,y, obj_player) || hp <= 0)
 }
 
 // Crate mining
+
+if (mine_timer > 0)
+{
+	mine_timer -= 1;	
+}
+
 if (position_meeting(mouse_x, mouse_y, this))
 {
 	hover = true;
@@ -23,6 +29,7 @@ if (position_meeting(mouse_x, mouse_y, this))
 	{
 		hp -= 1;
 		being_mined = true;	
+		mine_timer = 120;
 	}
 }
 else
