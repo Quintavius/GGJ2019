@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "2084e8de-e84b-441f-b8be-e9b0f1ad2855",
-            "Value": {
-                "id": "08e2ea86-fb00-4dd7-b793-1c03b80d3d81",
-                "resourcePath": "sprites\\tilesChopped\\tilesChopped.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "2744768d-203e-4adb-892e-46cda0f73d18",
             "Value": {
                 "id": "50d3e941-7097-414d-80b5-4c145c86fbc5",
@@ -172,14 +164,6 @@
                 "id": "e8e25482-7694-4988-989e-a75a697aa760",
                 "resourcePath": "views\\4c502b46-a42f-4dcd-90bd-8bbe31719e57.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "5f116d97-ea4c-442d-828f-f09a3f365a5f",
-            "Value": {
-                "id": "cfbd829f-ed84-4fe6-a3e7-b43c0dd7e9d7",
-                "resourcePath": "scripts\\BoolSwitch\\BoolSwitch.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -260,6 +244,14 @@
                 "id": "002b4017-245e-425f-a2b2-5ea5c9ef765f",
                 "resourcePath": "sprites\\spr_cloud\\spr_cloud.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9ec98e16-340f-4e4a-82d5-0735aa7ec80b",
+            "Value": {
+                "id": "3d1c8595-0713-4b49-ba46-ea35c2302749",
+                "resourcePath": "scripts\\scr_screen_shake\\scr_screen_shake.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -467,7 +459,7 @@
         "44427e9f-94b1-4c6c-9f77-27447c679de1",
         "879f9fb5-d374-4092-b830-6bd1a63f4226",
         "ccfa8ab1-c48e-44f4-a0b9-343494dfe05e",
-        "5f116d97-ea4c-442d-828f-f09a3f365a5f"
+        "9ec98e16-340f-4e4a-82d5-0735aa7ec80b"
     ],
     "tutorial": ""
 }
