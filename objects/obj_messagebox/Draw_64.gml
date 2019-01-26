@@ -1,6 +1,7 @@
 draw_set_font(fnt_messagebox);
-draw_set_color(c_gray);
+draw_set_color(c_white);
 draw_set_halign(0);
+draw_set_valign(0);
 draw_text(8,8, message_timer);
 
 if (message_timer > 0)

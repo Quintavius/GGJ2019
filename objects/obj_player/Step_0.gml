@@ -51,10 +51,12 @@ if (key_jump && jump_armed)
 }
 #endregion
 
+x = clamp(x, 0, room_width - 64);
+
 // Restart if character falls below map
-if (y > (obj_camera.y + 424) && global.game_time > 7)
+if ((y > (obj_camera.y + 424) && global.game_time > 7) || hp <= 0)
 {
-	room_restart();
+	global.is_dead = true;
 }
 
 scr_move(hsp);
@@ -66,9 +68,4 @@ if (place_meeting(x, y, obj_water) && hp > 0)
 else if (hp < 200)
 {
 	hp += 1;
-}
-
-if (hp <= 0)
-{
-	room_restart();	
 }
