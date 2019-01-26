@@ -1,5 +1,4 @@
 // Player control script
-
 #region // Grounded check
 if (place_meeting(x, y + 1, obj_solid)) 
 {
@@ -42,6 +41,11 @@ walksp *= sign(walksp);
 // Horizontal movement calculation
 var move = (key_right - key_left);
 hsp = move * walksp;
+if (hsp < -0.1){
+	image_xscale = -1;
+}else if (hsp > 0.1){
+	image_xscale = 1;
+}
 
 // Jumping
 if (key_jump && jump_armed && !global.is_paused)
