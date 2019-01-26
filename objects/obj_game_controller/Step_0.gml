@@ -25,7 +25,7 @@ if (mouse_check_button_pressed(mb_left))
 	}
 	else
 	{
-		scr_message("Cannot place block here", 3);
+		//scr_message("Cannot place block here", 3);
 	}
 }
 

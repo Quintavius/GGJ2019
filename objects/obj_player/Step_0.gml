@@ -54,9 +54,14 @@ if (key_jump && jump_armed)
 x = clamp(x, 0, room_width - 64);
 
 // Restart if character falls below map
-if (y > (obj_camera.y + 424) || hp <= 0)
+if (y > (obj_camera.y + 360))
+{
+	scr_message("The only way is forward!",3);
+}
+if ((y > (obj_camera.y + 424) || hp <= 0) && !global.is_dead)
 {
 	global.is_dead = true;
+	scr_screen_shake(16, 40);
 }
 
 if (global.is_dead)
@@ -67,9 +72,11 @@ global.tint_alpha = clamp(global.tint_alpha, 0, 1);
 
 scr_move(hsp);
 
-if (place_meeting(x, y, obj_water) || place_meeting(x ,y, obj_solid) && hp > 0)
+if ((place_meeting(x, y, obj_water) || place_meeting(x ,y, obj_solid)) && !global.is_dead)
 {
 	hp -= 2;
+	scr_screen_shake(2, 1);
+	scr_message("Get out of the water!", 3);
 }
 else if (hp < 200)
 {
