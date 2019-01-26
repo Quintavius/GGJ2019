@@ -1,7 +1,7 @@
 draw_self();
 
 draw_set_font(fnt_messagebox);
-draw_text(x,y,obj_camera.y - y);
+//draw_text(x,y,obj_camera.y - y);
 
 if (hp < 60)
 {

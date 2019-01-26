@@ -1,8 +1,9 @@
-if (abs(obj_camera.y - y) < 480)
+// Crate cleanup, optimisation
+if (abs(obj_camera.y - y) < 1024)
 {
 	scr_move(hsp);
 }
-if (abs(obj_camera.y - y) > 720)
+if (abs(obj_camera.y - y) > 1440)
 {
 	instance_destroy();
 }
