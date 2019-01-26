@@ -127,6 +127,24 @@ for(ypos = 3; ypos < section_height; ypos++){
 		instance_create_layer(xpixel, ypixel, "Instances", obj_wall);
 	}
 }
+//Dig holes
+if (random(1) < 0.2){
+	//Dig out a big hole
+	show_debug_message("digging hole");
+	var x_hole = BlockToPixel(irandom_range(0,PixelToBlock(room_width)));
+	var y_hole = BlockToPixel(irandom_range(SectionToBlock(last_reached_section+1), SectionToBlock(last_reached_section+2)));
+	instance_create_layer(x_hole,y_hole,"Instances",obj_coin);
+	var circleToDig = ds_list_create();
+	var killBlock = collision_circle_list(x_hole,y_hole,BlockToPixel(12),obj_wall,false,true, circleToDig,false);
+	if (killBlock > 0){
+		for(var l = 0; l < killBlock; l++){
+			instance_destroy(circleToDig[| l])
+			show_debug_message(circleToDig[| l]);
+		}
+	}
+	ds_list_destroy(circleToDig);
+}
+
 
 //Find path through
 var h;
@@ -148,18 +166,6 @@ for(h = 0; h < 2; h++){
 				//Move up
 				y_tunnel++
 				dugUp = true;
-				if (random(1) < 0.2){
-					//Dig out a big hole
-					show_debug_message("digging hole");
-					var circleToDig = ds_list_create();
-					var killBlock = collision_circle_list(x_tunnel,y_tunnel,BlockToPixel(8),obj_wall,false,true, circleToDig,false);
-					if (killBlock > 0){
-						for(var l = 0; l < killBlock; l++){
-							instance_destroy(circleToDig[| l])
-						}
-					}
-					ds_list_destroy(circleToDig);
-				}
 			}else{
 				if (y_tunnel < SectionToBlock(last_reached_section+1)){
 					//Move down

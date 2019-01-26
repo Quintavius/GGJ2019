@@ -9,7 +9,7 @@ for (i = 0; i < spawnIterations; i++){
 		var spawnDistance = random_range(8, section_height);
 		var y_spawn = BlockToPixel(PixelToBlock(obj_player.y) - spawnDistance);
 		if (!place_meeting(x_spawn, y_spawn, obj_wall)){
-			instance_create_layer(x_spawn, y_spawn, "Instances", obj_coin);
+			//instance_create_layer(x_spawn, y_spawn, "Instances", obj_coin);
 			spawnedCoin = true;
 		}
 	}
