@@ -62,6 +62,7 @@ if ((y > (obj_camera.y + 424) || hp <= 0) && !global.is_dead)
 {
 	global.is_dead = true;
 	scr_screen_shake(16, 40);
+	scr_audio("death");
 }
 
 if (global.is_dead)
