@@ -1,0 +1,1 @@
+return (argument0 * spr_crate.sprite_width);
