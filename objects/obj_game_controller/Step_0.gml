@@ -23,6 +23,7 @@ if (mouse_check_button_pressed(mb_left) && !global.is_paused)
 		!collision_rectangle(mouse_x-32, mouse_y+32, mouse_x+32, mouse_y-32, obj_player, false, false))
 	{
 		instance_create_layer(mouse_x, mouse_y, "Instances", obj_crate);
+		scr_audio("place")
 	}
 	else
 	{

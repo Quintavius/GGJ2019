@@ -14,42 +14,38 @@ if global.sound == 1 {
 		audio_play_sound(sfx_select,64,0);
 		break;
 		
-		case "music_menu": //background music
-		if (!audio_is_playing(sfx_mus_menu) and global.music == 1)
-		{
-			audio_stop_sound(sfx_mus_level);
-			audio_play_sound(sfx_mus_menu,64,1);
-		}
-		break;
-		
 		case "music_level": //background music
 		audio_sound_gain(sfx_mus_level, 0.45, 120);
 		if (!audio_is_playing(sfx_mus_level) and global.music == 1)
 		{
-			audio_stop_sound(sfx_mus_menu);
 			audio_play_sound(sfx_mus_level,64,1);
 		}
 		break;
 		
 		case "jump": // jump
+		audio_sound_pitch(sfx_jump, 1.15 - random(0.3));
 		audio_play_sound(sfx_jump,64,0);
 		break;
 		
-		case "explosion": // flammable object destroyed
-		audio_play_sound(sfx_explosion, 64, 0);
-		audio_sound_pitch(sfx_explosion, 1.17 - random(0.33));
+		case "place": // place block
+		audio_play_sound(sfx_place, 64, 0);
+		audio_sound_pitch(sfx_place, 1.1 - random(0.2));
 		break;
 		
-		case "dig": // dig dirt
-		audio_play_sound(sfx_dig, 64, 0);
-		audio_sound_pitch(sfx_dig, 1.1 - random(0.2));
+		case "damage": // player or animal death
+		audio_sound_gain(sfx_damage, 0.3*(1-obj_player.hp/200), 0);
+		if (!audio_is_playing(sfx_damage))
+		{
+			audio_play_sound(sfx_damage,64,0);
+		}
+		if (global.is_dead || obj_player.hp >= 200)
+		{
+		 audio_stop_sound(sfx_damage);	
+		}
 		break;
 		
 		case "death": // player or animal death
-		if (!global.is_dead)
-		{
-			audio_play_sound(sfx_death,64,0);
-		}
+		audio_play_sound(sfx_death,64,0);
 		break;
 	}
 }

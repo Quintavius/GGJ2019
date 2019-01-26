@@ -1,14 +1,14 @@
 {
-    "id": "59ca0601-a6e2-4933-ae46-10836095210d",
+    "id": "7e66135f-cd6b-457c-8fef-8a74ecfabd44",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "sfx_mus_level",
+    "name": "sfx_jump",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
-    "kind": 3,
+    "kind": 0,
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 0.18
+    "volume": 0.25
 }

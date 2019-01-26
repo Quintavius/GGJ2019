@@ -48,10 +48,13 @@ if (key_jump && jump_armed && !global.is_paused)
 {
 	vsp = jump_height * -1 * sign(global.grv);
 	jump_armed = false;
+	scr_audio("jump")
 }
 #endregion
 
-x = clamp(x, 0, room_width - 64);
+x = clamp(x, 0, room_width);
+
+scr_move(hsp);
 
 // Restart if character falls below map
 if (y > (obj_camera.y + 360))
@@ -71,7 +74,7 @@ if (global.is_dead)
 }
 global.tint_alpha = clamp(global.tint_alpha, 0, 1);
 
-scr_move(hsp);
+scr_audio("damage");
 
 if (!global.is_dead && !global.is_paused)
 {
