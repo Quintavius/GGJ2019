@@ -5,9 +5,6 @@ if (player_section > last_reached_section){
 	last_reached_section = player_section
 }
 
-show_debug_message(player_height);
-show_debug_message(next_spawn_height);
-
 
 //From here on, use last reached section
 if (player_height > next_spawn_height){

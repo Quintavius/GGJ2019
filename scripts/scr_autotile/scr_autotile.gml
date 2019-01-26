@@ -1,2 +1,15 @@
-enum tileValues { 2 = 1, 8 = 2, 10 = 3, 11 = 4, 16 = 5, 18 = 6, 22 = 7, 24 = 8, 26 = 9, 27 = 10, 30 = 11, 31 = 12, 64 = 13, 66 = 14, 72 = 15, 74 = 16, 75 = 17, 80 = 18, 82 = 19, 86 = 20, 88 = 21, 90 = 22, 91 = 23, 94 = 24, 95 = 25, 104 = 26, 106 = 27, 107 = 28, 120 = 29, 122 = 30, 123 = 31, 126 = 32, 127 = 33, 208 = 34, 210 = 35, 214 = 36, 216 = 37, 218 = 38, 219 = 39, 222 = 40, 223 = 41, 248 = 42, 250 = 43, 251 = 44, 254 = 45, 255 = 46, 0 = 47 }
+tileValues[0] = 59;
+tileValues[224] = 3;
 
+var bitValue = (
+	(1 * BoolSwitch(position_meeting(x - BlockToPixel(1), y - BlockToPixel(1), obj_wall))) +
+	(2 * BoolSwitch(position_meeting(0, y - BlockToPixel(1), obj_wall))) +
+	(4 * BoolSwitch(position_meeting(x + BlockToPixel(1), y - BlockToPixel(1), obj_wall))) +
+	(8 * BoolSwitch(position_meeting(x - BlockToPixel(1), 0, obj_wall))) +
+	(16 * BoolSwitch(position_meeting(x + BlockToPixel(1), 0, obj_wall))) +
+	(32 * BoolSwitch(position_meeting(x - BlockToPixel(1), y + BlockToPixel(1), obj_wall))) +
+	(64 * BoolSwitch(position_meeting(0, y + BlockToPixel(1), obj_wall))) +
+	(128 * BoolSwitch(position_meeting(x + BlockToPixel(1), y + BlockToPixel(1), obj_wall)))
+)
+
+draw_tile(placeHolderTiles, tileValues[bitValue] , 0,x,y);
