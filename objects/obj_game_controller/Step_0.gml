@@ -1,5 +1,11 @@
 global.game_time += 1/room_speed;
 
+if (global.game_time > 0.5 && global.game_time < 2.6)
+{
+	global.tint_alpha -= 1/60;
+}
+global.tint_alpha = clamp(global.tint_alpha, 0, 1);
+
 if (global.is_dead)
 {
 	global.death_timer -= 1/room_speed;
