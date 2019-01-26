@@ -6,6 +6,7 @@ enum GenerationRecipes{
 	ThreeTunnelCave,
 	StarterCave,
 	SpikeCaverns,
+	DenseCave,
 	length
 }
 
