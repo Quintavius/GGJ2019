@@ -151,7 +151,12 @@ for(h = 0; h < 2; h++){
 				if (random(1) < 0.2){
 					//Dig out a big hole
 					show_debug_message("digging hole");
-					
+					var circleToDig = ds_list_create();
+					collision_circle_list(x_tunnel,y_tunnel,BlockToPixel(8),obj_wall,false,true, circleToDig,false);
+					show_debug_message(circleToDig);
+					for(var l = 0; l < ds_list_size(circleToDig); l++){
+						with(ds_list_read(circleToDig,l)) {instance_destroy();}
+					}
 				}
 			}else{
 				if (y_tunnel < SectionToBlock(last_reached_section+1)){
