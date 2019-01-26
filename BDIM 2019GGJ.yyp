@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "126c0b28-e9b4-4217-9b5a-39424deadb47",
+            "Value": {
+                "id": "e7cebbfa-910e-4ee9-9cbe-c276594922dc",
+                "resourcePath": "sprites\\tiles\\tiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2056ef33-63c6-472d-a728-0de143f92ca2",
             "Value": {
                 "id": "98696239-5baf-4d42-8804-7e01a91ce91c",
@@ -100,6 +108,14 @@
                 "id": "771e6d3c-c658-46a2-955b-5caf216911ac",
                 "resourcePath": "objects\\obj_camera\\obj_camera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2b27416b-a9c5-46de-9f79-9a9676d83950",
+            "Value": {
+                "id": "239c434d-9b90-4d29-83e1-b64f8bc6a75c",
+                "resourcePath": "tilesets\\placeHolderTiles\\placeHolderTiles.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -351,6 +367,14 @@
             }
         },
         {
+            "Key": "ccfa8ab1-c48e-44f4-a0b9-343494dfe05e",
+            "Value": {
+                "id": "ffdab3e3-2396-4bcc-aac0-3d24d160dbf2",
+                "resourcePath": "scripts\\scr_autotile\\scr_autotile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d92514ed-dd52-4852-a4e8-f593d7b9d4f8",
             "Value": {
                 "id": "1b887b02-cb5c-4a96-856a-1153578fb5c7",
@@ -425,7 +449,8 @@
         "7118b024-ee3e-487c-8683-3dd24b5d2a0c",
         "a9c95945-4aaf-43d3-bcdb-2559a5cf0eac",
         "44427e9f-94b1-4c6c-9f77-27447c679de1",
-        "879f9fb5-d374-4092-b830-6bd1a63f4226"
+        "879f9fb5-d374-4092-b830-6bd1a63f4226",
+        "ccfa8ab1-c48e-44f4-a0b9-343494dfe05e"
     ],
     "tutorial": ""
 }
