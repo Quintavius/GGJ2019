@@ -1,6 +1,6 @@
 /// @description Clean up
 
-if (y > obj_player.y + 800){
+if (y > obj_player.y + 1440){
 	instance_destroy();
 }
 
