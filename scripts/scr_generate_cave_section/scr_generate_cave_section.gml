@@ -151,6 +151,7 @@ for(h = 0; h < 2; h++){
 				if (random(1) < 0.2){
 					//Dig out a big hole
 					show_debug_message("digging hole");
+					
 				}
 			}else{
 				if (y_tunnel < SectionToBlock(last_reached_section+1)){
