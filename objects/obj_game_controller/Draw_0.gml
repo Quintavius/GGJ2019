@@ -1,1 +1,1 @@
-draw_sprite_ext(spr_crate, 0, mouse_x, mouse_y, 1, 1, 0, c_white, 0.5);
+draw_sprite_ext(spr_crate, !can_place, mouse_x, mouse_y, 1, 1, 0, c_white, 0.5);

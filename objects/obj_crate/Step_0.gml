@@ -1,7 +1,6 @@
 scr_move(hsp);
 
-if (place_meeting(x,y, obj_solid) || place_meeting(x,y, obj_player))
+if (place_meeting(x,y, obj_solid) || place_meeting(x,y, obj_player) || hp <= 0)
 {
-	//scr_message("Cannot place block here", 3);
 	instance_destroy();
 }

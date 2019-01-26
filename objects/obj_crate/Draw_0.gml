@@ -6,5 +6,5 @@ draw_text(x,y,hp);
 if (hp < 60)
 {
 	draw_set_color(c_white);
-	draw_rectangle(x+4, y+56, (hp/60)*56+x, y+60, 0);
+	draw_rectangle(x-24, y+20, x + 24, y+24, 0);
 }
