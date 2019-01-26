@@ -1,5 +1,5 @@
 /// @description Clean up
-if (y > (room_height + 200)){
+if (y > (obj_player.y + 800)){
 	instance_destroy();
 }
 

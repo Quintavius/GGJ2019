@@ -17,5 +17,4 @@ draw_tile(placeHolderTiles, tileValues[bitValue] , 0,x,y);
 
 if (tileValues[bitValue] = 0){
 	draw_text(x,y,bitValue);
-	show_debug_message(bitValue);
 }
