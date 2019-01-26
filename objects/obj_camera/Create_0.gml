@@ -2,7 +2,7 @@ object_y = obj_player.y;
 lerp_speed = 0.15;
 
 x = room_width-640;
-y = room_height-360;
+y = room_height+360;
 
 // Setup camera matrix
 camera = camera_create();
