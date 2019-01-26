@@ -8,6 +8,7 @@ if (global.game_time > 2)
 
 y = lerp(y, object_y, lerp_speed);
 
+x = room_width/2;
 
 // Screen shake
 x += random_range(-shake_remain,shake_remain);

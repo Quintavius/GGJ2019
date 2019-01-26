@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "9ec98e16-340f-4e4a-82d5-0735aa7ec80b",
+            "Value": {
+                "id": "3d1c8595-0713-4b49-ba46-ea35c2302749",
+                "resourcePath": "scripts\\scr_screen_shake\\scr_screen_shake.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "ab50ca71-432f-4f21-a374-a6f3eff85174",
@@ -450,7 +458,8 @@
         "a9c95945-4aaf-43d3-bcdb-2559a5cf0eac",
         "44427e9f-94b1-4c6c-9f77-27447c679de1",
         "879f9fb5-d374-4092-b830-6bd1a63f4226",
-        "ccfa8ab1-c48e-44f4-a0b9-343494dfe05e"
+        "ccfa8ab1-c48e-44f4-a0b9-343494dfe05e",
+        "9ec98e16-340f-4e4a-82d5-0735aa7ec80b"
     ],
     "tutorial": ""
 }
