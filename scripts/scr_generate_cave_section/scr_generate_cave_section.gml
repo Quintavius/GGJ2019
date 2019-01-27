@@ -262,6 +262,29 @@ for(h = 0; h < 2; h++){
 		}
 	}
 }
+
+//Spawn spikes
+var spawnIterations = 30
+
+var s;
+for (s = 0; s < spawnIterations; s++){
+	var x_spawn = BlockToPixel(PixelToBlock(irandom_range(0, room_width)));
+	var spawnDistance = SectionToBlock(last_reached_section+1);
+	var y_spawn = 0-BlockToPixel(irandom_range(spawnDistance, spawnDistance + section_height));
+	if (!place_meeting(x_spawn, y_spawn, obj_wall)){
+		//instance_create_layer(x_spawn, y_spawn, "Instances", obj_spikes);
+		var spawnSpike = false
+		if (position_meeting(x_spawn - 64, y_spawn, obj_wall)) {spawnSpike = true;}
+		if (position_meeting(x_spawn + 64, y_spawn, obj_wall)) {spawnSpike = true;}
+		if (position_meeting(x_spawn, y_spawn - 64, obj_wall)) {spawnSpike = true;}
+		if (position_meeting(x_spawn, y_spawn + 64, obj_wall)) {spawnSpike = true;}
+		if (spawnSpike) {
+			instance_create_layer(x_spawn, y_spawn, "Instances", obj_spikes);
+			}
+	}
+}
+
+
 #endregion
 break;
 }

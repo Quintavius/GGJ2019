@@ -10,7 +10,7 @@ if (player_section > last_reached_section){
 if (player_height > next_spawn_height){
 	//Spawning manager goes here
 	var sectionType = irandom_range(0,GenerationRecipes.length-1)
-	scr_generate_cave_section(sectionType);
+	scr_generate_cave_section(GenerationRecipes.SpikeCaverns);
 	show_debug_message(sectionType)
 	SpawnCoin();
 	next_spawn_height += section_height;
