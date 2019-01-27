@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "2845cc2e-6790-4202-9f3f-6f69bfeab8d8",
+            "Value": {
+                "id": "3a641d43-2be5-4149-940a-9f1819c94936",
+                "resourcePath": "objects\\obj_gemPickupFX\\obj_gemPickupFX.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2abe65ca-0176-4e5f-a50d-6ec8aa28dd03",
             "Value": {
                 "id": "771e6d3c-c658-46a2-955b-5caf216911ac",
@@ -523,6 +531,14 @@
             "Value": {
                 "id": "b12db7ee-f470-4722-9d8c-13fca42ae735",
                 "resourcePath": "sprites\\spr_water_lower\\spr_water_lower.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b5905768-b685-4c4a-97ee-8cd211584357",
+            "Value": {
+                "id": "893966d1-5c2c-49aa-a232-65a5d8b29318",
+                "resourcePath": "sprites\\spr_sparkle\\spr_sparkle.yy",
                 "resourceType": "GMSprite"
             }
         },
