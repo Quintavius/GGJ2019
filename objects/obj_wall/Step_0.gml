@@ -14,6 +14,7 @@ if (position_meeting(mouse_x, mouse_y, this))
 		hp -= 1;
 		being_mined = true;
 		mine_timer = 120;
+		scr_audio("mining");
 	}
 }
 else
@@ -40,7 +41,8 @@ for (var i = 0; i < ww; i += chunk){
 		particle.xx = i;
 		particle.yy = j;
 	}
-}	
+}
+scr_audio("break");
 instance_destroy();
 }
 

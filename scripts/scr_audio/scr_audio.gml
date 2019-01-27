@@ -94,6 +94,10 @@ if global.sound == 1 {
 			audio_play_sound(sfx_mining,64,0);
 		}
 		break;
+		
+		case "coin": // coin pickup
+		audio_play_sound(sfx_coin,64,0);
+		break;
 	}
 }
 

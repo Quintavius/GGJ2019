@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "18bdb512-eb00-4fb1-afd0-9fef4061c6b6",
+            "Value": {
+                "id": "06e24578-5d1b-4efc-b222-894a0d79e28e",
+                "resourcePath": "sounds\\sfx_coin\\sfx_coin.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "18fbb99f-3eca-4cb7-b6c1-845be7248774",
             "Value": {
                 "id": "52365be4-61a5-43de-ba58-648db74d687f",
