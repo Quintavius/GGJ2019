@@ -21,10 +21,14 @@ global.tint_alpha = clamp(global.tint_alpha, 0, 1);
 
 if (global.is_dead)
 {
-	global.death_timer -= 1/room_speed;
-	if (global.death_timer <= 0)
+	global.death_timer += 1/room_speed;
+	if (global.death_timer >= 2)
 	{
-		room_restart();	
+		scr_message("Press space to continue", 60);
+		if (keyboard_check_pressed(vk_space))
+		{
+			room_restart();
+		}
 	}
 	global.is_paused = false;
 }

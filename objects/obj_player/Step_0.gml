@@ -66,7 +66,7 @@ if (y <= 0 && y >= -2)
 }
 
 // Restart if character falls below map
-if (y > (obj_camera.y + 296))
+if (y > (obj_camera.y + 296) && !global.is_dead)
 {
 	scr_message("The only way is forward!",3);
 }
