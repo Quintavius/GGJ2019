@@ -31,6 +31,11 @@ if global.sound == 1 {
 		audio_sound_pitch(sfx_place, 1.1 - random(0.2));
 		break;
 		
+		case "break": // break block
+		audio_play_sound(sfx_break, 64, 0);
+		audio_sound_pitch(sfx_place, 1.1 - random(0.2));
+		break;
+		
 		case "danger1": // danger level 1
 		var danger1_value = 1 - (clamp(abs(obj_player.y - obj_water.y)/456 ,0 ,1 ));
 		audio_sound_gain(sfx_beat, danger1_value * 0.1, 0);
@@ -77,6 +82,17 @@ if global.sound == 1 {
 		
 		case "death": // player or animal death
 		audio_play_sound(sfx_death,64,0);
+		break;
+		
+		case "drop": // dropping object
+		audio_play_sound(sfx_drop,64,0);
+		break;
+		
+		case "mining": // mining blocks
+		if (!audio_is_playing(sfx_mining))
+		{
+			audio_play_sound(sfx_mining,64,0);
+		}
 		break;
 	}
 }

@@ -15,4 +15,7 @@ being_mined = false;
 mine_timer = 0;
 hover = false;
 
+grounded = false;
+drop_sound_played = false;
+
 index = 0;
