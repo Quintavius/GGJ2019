@@ -104,3 +104,18 @@ if (!global.is_dead && !global.is_paused)
 		hp += 1;
 	}
 }
+
+// Squash and stretch
+if (key_up && !grounded)
+{
+	draw_yscale = 1.15;
+	draw_xscale = 0.88;
+}
+draw_xscale = lerp(draw_xscale, 1, .12);
+draw_yscale = lerp(draw_yscale, 1, .12);
+	
+if (place_meeting(x,y+1,obj_solid) && !place_meeting(x,yprevious +1, obj_solid))
+{
+	draw_yscale = .8;
+	draw_xscale = 1.12;
+}
