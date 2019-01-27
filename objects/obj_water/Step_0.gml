@@ -1,6 +1,11 @@
 dist = y - obj_player.y;
 
-global.water_speed = clamp((dist/fac), .5, 1.5);
+if (global.height_reached >= 10 && global.water_speed_min < 0.8)
+{
+	global.water_speed_min += 0.0001;
+}
+
+global.water_speed = clamp((dist/fac), global.water_speed_min, 1.5);
 
 if (global.play_time > 5 && !global.is_paused)
 {

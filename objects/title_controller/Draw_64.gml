@@ -5,7 +5,7 @@ draw_set_valign(1);
 draw_set_font(fnt_large);
 draw_set_alpha(1);
 
-draw_text(640, 128, "WATER GOES UP");
+draw_text(640, 128, "Water Goes Up");
 
 draw_set_font(fnt_messagebox);
 

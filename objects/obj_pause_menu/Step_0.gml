@@ -36,7 +36,7 @@ if (global.is_paused)
 	
 		if (select == 1)
 		{
-			controls_screen = !controls_screen;
+			global.controls_shown = true;
 		}
 	
 		if (select == 2)
