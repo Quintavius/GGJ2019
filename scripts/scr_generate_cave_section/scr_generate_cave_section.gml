@@ -347,12 +347,12 @@ for(h = 0; h < cave_digging_iterations * 4; h++){
 }
 
 //Spawn spikes
-var spawnIterations = 60
+var spawnIterations = 120
 
 var s;
 for (s = 0; s < spawnIterations; s++){
 	var spawnedSpike = false;
-	while(!spawnedSpike){
+
 	var x_spawn = BlockToPixel(PixelToBlock(irandom_range(0, room_width)));
 	var spawnDistance = SectionToBlock(last_reached_section+1);
 	var y_spawn = 0-BlockToPixel(irandom_range(spawnDistance, spawnDistance + section_height));
@@ -370,7 +370,7 @@ for (s = 0; s < spawnIterations; s++){
 				image_angle = rotation;
 			};
 		}
-	}
+	
 	}
 }
 
