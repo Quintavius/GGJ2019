@@ -21,7 +21,7 @@ if (key_act_p)
 	
 	if (select == 1)
 	{
-		//controls_screen = !controls_screen;
+		room_goto(rm_credits);
 	}
 	
 	if (select == 2)

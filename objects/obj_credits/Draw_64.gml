@@ -8,4 +8,11 @@ draw_set_valign(0);
 draw_text(640, 128, "Created by");
 
 draw_set_font(fnt_messagebox);
+
+draw_text(640, 256,"Ben Delamore");
+
+draw_text(640, 256+64,"David Morris");
+
+draw_text(640, 256+128,"Marc Loths");
+
 }

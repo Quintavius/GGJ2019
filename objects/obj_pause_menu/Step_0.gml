@@ -36,7 +36,7 @@ if (global.is_paused)
 	
 		if (select == 1)
 		{
-			global.controls_shown = true;
+			room_goto(rm_credits);
 		}
 	
 		if (select == 2)

@@ -14,7 +14,7 @@ for (var i = 0; i < 3; i++)
 	var yy = i * 60;
 	
 	if (i = 0) {var item = "Start";}
-	if (i = 1) {var item = "Controls"}
+	if (i = 1) {var item = "Credits"}
 	if (i = 2) {var item = "Exit"}
 	
 	if (select = i)
