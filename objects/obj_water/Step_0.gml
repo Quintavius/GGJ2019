@@ -1,6 +1,6 @@
 dist = y - obj_player.y;
 
-if (global.height_reached >= 10 && global.water_speed_min < 0.8)
+if (global.height_reached >= 10 && global.water_speed_min < 0.75)
 {
 	global.water_speed_min += 0.0001;
 }
