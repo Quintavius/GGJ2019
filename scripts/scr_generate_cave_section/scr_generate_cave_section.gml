@@ -4,7 +4,7 @@ case GenerationRecipes.DenseCave:
 #region
 //Block out everything
 var ypos;
-for(ypos = 3; ypos < section_height; ypos++){
+for(ypos = 0; ypos < section_height; ypos++){
 	var xpos;
 	for (xpos = 0; xpos < PixelToBlock(room_width); xpos++){
 		var xpixel = BlockToPixel(xpos);
@@ -52,6 +52,17 @@ var h;
 			}
 		}
 	}
+//Dig out a big hole
+var x_hole = BlockToPixel(x_tunnel);
+var y_hole = BlockToPixel(y_tunnel);
+var circleToDig = ds_list_create();
+var killBlock = collision_circle_list(x_hole,y_hole,BlockToPixel(2),obj_wall,false,true, circleToDig,false);
+if (killBlock > 0){
+	for(var l = 0; l < killBlock; l++){
+		instance_destroy(circleToDig[| l])
+	}
+}
+ds_list_destroy(circleToDig);
 #endregion
 break;
 
@@ -59,7 +70,7 @@ case GenerationRecipes.ThreeTunnelCave:
 #region
 //Block out everything
 var ypos;
-for(ypos = 3; ypos < section_height; ypos++){
+for(ypos = 0; ypos < section_height; ypos++){
 	var xpos;
 	for (xpos = 0; xpos < PixelToBlock(room_width); xpos++){
 		var xpixel = BlockToPixel(xpos);
@@ -108,6 +119,17 @@ for(h = 0; h < cave_digging_iterations; h++){
 			}
 		}
 	}
+	//Dig out a big hole
+var x_hole = BlockToPixel(x_tunnel);
+var y_hole = BlockToPixel(y_tunnel);
+var circleToDig = ds_list_create();
+var killBlock = collision_circle_list(x_hole,y_hole,BlockToPixel(2),obj_wall,false,true, circleToDig,false);
+if (killBlock > 0){
+	for(var l = 0; l < killBlock; l++){
+		instance_destroy(circleToDig[| l])
+	}
+}
+ds_list_destroy(circleToDig);
 }
 #endregion
 break;
@@ -116,7 +138,7 @@ case GenerationRecipes.StarterCave:
 #region
 //Block out everything
 var ypos;
-for(ypos = 4; ypos < section_height; ypos++){
+for(ypos = 0; ypos < section_height; ypos++){
 	var xpos;
 	for (xpos = 0; xpos < PixelToBlock(room_width); xpos++){
 		var xpixel = BlockToPixel(xpos);
@@ -173,7 +195,7 @@ case GenerationRecipes.SpikeCaverns:
 #region
 //Block out everything
 var ypos;
-for(ypos = 3; ypos < section_height; ypos++){
+for(ypos = 0; ypos < section_height; ypos++){
 	var xpos;
 	for (xpos = 0; xpos < PixelToBlock(room_width); xpos++){
 		var xpixel = BlockToPixel(xpos);
@@ -188,7 +210,6 @@ for(var ii = 0; ii<numberOfHoles;ii++){
 	show_debug_message("digging hole");
 	var x_hole = BlockToPixel(irandom_range(0,PixelToBlock(room_width)));
 	var y_hole = 0-BlockToPixel(irandom_range(SectionToBlock(last_reached_section+1), SectionToBlock(last_reached_section+2)));
-	instance_create_layer(x_hole,y_hole,"Instances",obj_coin);
 	var circleToDig = ds_list_create();
 	var killBlock = collision_circle_list(x_hole,y_hole,BlockToPixel(4),obj_wall,false,true, circleToDig,false);
 	if (killBlock > 0){
