@@ -7,4 +7,4 @@ draw_sprite(spr_coin, 0, 32, 32);
 draw_text(72, 36, global.coinsCollected);
 
 draw_sprite(spr_footprint, 0, 32, 72);
-draw_text(72, 76, heightReached);
+draw_text(72, 76, height_reached);
