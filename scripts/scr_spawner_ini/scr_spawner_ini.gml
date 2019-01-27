@@ -7,6 +7,7 @@ enum GenerationRecipes{
 	StarterCave,
 	SpikeCaverns,
 	DenseCave,
+	SpikeHell,
 	length
 }
 
