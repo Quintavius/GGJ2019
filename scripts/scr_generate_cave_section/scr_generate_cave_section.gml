@@ -274,13 +274,16 @@ for (s = 0; s < spawnIterations; s++){
 	if (!place_meeting(x_spawn, y_spawn, obj_wall)){
 		//instance_create_layer(x_spawn, y_spawn, "Instances", obj_spikes);
 		var spawnSpike = false
-		if (position_meeting(x_spawn - 64, y_spawn, obj_wall)) {spawnSpike = true;}
-		if (position_meeting(x_spawn + 64, y_spawn, obj_wall)) {spawnSpike = true;}
-		if (position_meeting(x_spawn, y_spawn - 64, obj_wall)) {spawnSpike = true;}
-		if (position_meeting(x_spawn, y_spawn + 64, obj_wall)) {spawnSpike = true;}
+		var rotation = 0;
+		if (position_meeting(x_spawn - 64, y_spawn, obj_wall)) {spawnSpike = true; rotation = 270;}
+		if (position_meeting(x_spawn + 64, y_spawn, obj_wall)) {spawnSpike = true; rotation = 90;}
+		if (position_meeting(x_spawn, y_spawn - 64, obj_wall)) {spawnSpike = true; rotation = 180;}
+		if (position_meeting(x_spawn, y_spawn + 64, obj_wall)) {spawnSpike = true; rotation = 0;}
 		if (spawnSpike) {
-			instance_create_layer(x_spawn, y_spawn, "Instances", obj_spikes);
-			}
+			with(instance_create_layer(x_spawn + 32, y_spawn + 32, "Instances", obj_spikes)){
+				image_angle = rotation;
+			};
+		}
 	}
 }
 
