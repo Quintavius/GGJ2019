@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "71aa77d5-7d9c-4380-96ab-6709cb30c880",
+            "Value": {
+                "id": "0ed9edf1-81d9-46b0-bc26-49e5c0caad9a",
+                "resourcePath": "sprites\\spr_footprint\\spr_footprint.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "733fccaf-1415-47bf-bce6-f4e7bc8067ec",
             "Value": {
                 "id": "82b898cd-1d7a-4af9-a3f0-98d5c5124d6f",
