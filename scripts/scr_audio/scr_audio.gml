@@ -81,7 +81,10 @@ if global.sound == 1 {
 		break;
 		
 		case "death": // player or animal death
-		audio_play_sound(sfx_death,64,0);
+		if (!audio_is_playing(sfx_death) && !global.is_dead)
+		{
+			audio_play_sound(sfx_death,64,0);
+		}
 		break;
 		
 		case "drop": // dropping object

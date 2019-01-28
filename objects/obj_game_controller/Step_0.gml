@@ -2,7 +2,7 @@
 global.game_time += 1/room_speed;
 
 // Time playing
-if (global.is_playing)
+if (global.is_playing || !global.is_paused || !global.is_dead)
 {
 	global.play_time += 1/room_speed;
 }

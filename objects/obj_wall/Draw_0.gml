@@ -4,10 +4,10 @@ if (!bitValueCalculated){
 }
 draw_tile(placeHolderTiles, global.tileValues[bitValue] , 0,x,y);
 
-if (hp < 120 && mine_timer > 0)
+if (hp < 60 && mine_timer > 0)
 {
 	draw_set_color(c_white);
-	draw_rectangle(x-24+32, y+20+32, x - 24 + (48*(hp/120))+32, y+24+32, 0);
+	draw_rectangle(x-24+32, y+20+32, x - 24 + (48*(hp/60))+32, y+24+32, 0);
 }
 
 if (hover)

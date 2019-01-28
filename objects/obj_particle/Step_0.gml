@@ -7,10 +7,9 @@ else{
 
 scr_move(hsp);
 
-
 if (fadeout){
-palpha -= 0.01;
-if (palpha <= 0){
-instance_destroy();
-}
+	palpha -= 0.01;
+	if (palpha <= 0){
+	instance_destroy();
+	}
 }

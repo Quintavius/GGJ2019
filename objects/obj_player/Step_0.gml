@@ -48,7 +48,7 @@ if (hsp < -0.1){
 }
 
 // Jumping
-if (key_jump && jump_armed && !global.is_paused)
+if (key_jump && jump_armed && !global.is_paused && !global.is_dead)
 {
 	vsp = jump_height * -1 * sign(global.grv);
 	jump_armed = false;
@@ -72,9 +72,7 @@ if (y > (obj_camera.y + 296) && !global.is_dead)
 }
 if ((y > (obj_camera.y + 424) || hp <= 0) && !global.is_dead)
 {
-	global.is_dead = true;
-	scr_screen_shake(16, 40);
-	scr_audio("death");
+	scr_death();
 }
 
 // Fade to black on death

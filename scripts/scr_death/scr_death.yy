@@ -1,8 +1,8 @@
 {
-    "id": "94aa407d-7564-45c9-af6e-348359e16ad4",
+    "id": "a65f09d1-6c84-42d7-8f53-78169c7cd359",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_move",
+    "name": "scr_death",
     "IsCompatibility": false,
     "IsDnD": false
 }

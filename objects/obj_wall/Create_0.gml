@@ -8,7 +8,7 @@ isolatedBlock = false;
 being_mined = false;
 mine_timer = 0;
 hover = false;
-hp = 120;
+hp = 60;
 
 for(var i = -1; i < 2; i++){
 	for(var j = -1; j < 2; j++){

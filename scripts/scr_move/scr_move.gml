@@ -7,7 +7,7 @@ var fallMod;
 if (vsp < 0) {fallMod = 1.5} else {fallMod = 2}
 vsp += global.grv * fallMod;
 
-if (global.is_paused)
+if (global.is_paused || global.is_dead)
 {
 	hsp = 0;
 }

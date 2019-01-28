@@ -1,8 +1,8 @@
 {
-    "id": "94aa407d-7564-45c9-af6e-348359e16ad4",
+    "id": "b30251a5-3c7b-44db-9748-3332bb26e75b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_move",
+    "name": "scr_block_destroy",
     "IsCompatibility": false,
     "IsDnD": false
 }

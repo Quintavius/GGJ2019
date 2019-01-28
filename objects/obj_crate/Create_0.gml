@@ -10,7 +10,7 @@ collisons = true;
 hsp = 0; 
 vsp = 0;
 
-hp = 60;
+hp = 30;
 being_mined = false;
 mine_timer = 0;
 hover = false;

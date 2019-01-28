@@ -1,6 +1,7 @@
 global.grv = 0.3;				// Gravity
 global.water_speed = 0.5;		// Initial speed of water scrolling
 global.water_speed_min = 0.5	// Min water speed
+global.water_speed_max = 1.5	// Max water speed
 global.game_time = 0;			// Seconds after room start
 global.play_time = 0;			// Seconds after control taken
 global.death_timer = 0;			// Seconds death screen is displayed for
