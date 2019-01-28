@@ -1,6 +1,7 @@
 switch (argument0)
 {
 case GenerationRecipes.DenseCave:
+show_debug_message("Generating DenseCave");
 #region
 //Block out everything
 var ypos;
@@ -52,7 +53,8 @@ var h;
 			}
 		}
 	}
-//Dig out a big hole
+
+//Dig out a big hole on exit
 var x_hole = BlockToPixel(x_tunnel);
 var y_hole = BlockToPixel(y_tunnel);
 var circleToDig = ds_list_create();
@@ -63,10 +65,12 @@ if (killBlock > 0){
 	}
 }
 ds_list_destroy(circleToDig);
+
 #endregion
 break;
 
 case GenerationRecipes.ThreeTunnelCave:
+show_debug_message("Generating ThreeTunnelCave");
 #region
 //Block out everything
 var ypos;
@@ -135,6 +139,7 @@ ds_list_destroy(circleToDig);
 break;
 
 case GenerationRecipes.StarterCave:
+show_debug_message("Generating StarterCave");
 #region
 //Block out everything
 var ypos;
@@ -192,6 +197,7 @@ for(h = 0; h < cave_digging_iterations * 4; h++){
 break;
 
 case GenerationRecipes.SpikeCaverns:
+show_debug_message("Generating SpikeCaverns");
 #region
 //Block out everything
 var ypos;
@@ -207,7 +213,6 @@ for(ypos = 0; ypos < section_height; ypos++){
 var numberOfHoles = irandom_range(1,4);
 for(var ii = 0; ii<numberOfHoles;ii++){
 	//Dig out a big hole
-	show_debug_message("digging hole");
 	var x_hole = BlockToPixel(irandom_range(0,PixelToBlock(room_width)));
 	var y_hole = 0-BlockToPixel(irandom_range(SectionToBlock(last_reached_section+1), SectionToBlock(last_reached_section+2)));
 	var circleToDig = ds_list_create();
@@ -292,6 +297,7 @@ for (s = 0; s < spawnIterations; s++){
 break;
 
 case GenerationRecipes.SpikeHell:
+show_debug_message("Generating SpikeHell");
 #region
 //Block out everything
 var ypos;
