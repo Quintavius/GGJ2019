@@ -2,7 +2,7 @@
 global.game_time += 1/room_speed;
 
 // Time playing
-if (global.is_playing || !global.is_paused || !global.is_dead)
+if (global.is_playing && !global.is_paused && !global.is_dead)
 {
 	global.play_time += 1/room_speed;
 }
@@ -43,7 +43,7 @@ if (!collision_rectangle(mouse_x-32, mouse_y+32, mouse_x+32, mouse_y-32, obj_sol
 else {can_place = false;}
 
 // Spawn crates
-if (mouse_check_button_pressed(mb_left) && !global.is_paused && can_place)
+if (mouse_check_button_pressed(mb_left) && !global.is_paused && can_place && !global.is_dead)
 {
 	instance_create_layer(mouse_x, mouse_y, "Instances", obj_crate);
 	scr_audio("place")
